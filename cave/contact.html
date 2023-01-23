@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title>Contact</title>
+	</head>
+	<body>
+		<div id="entete">
+			<img src="images/logo.png" alt="logo du site">
+			<h1>SFCV</h1>
+			<h3>N°1 des caves à vins</h3>
+		</div>
+
+		<hr>
+
+		<div id="menu">
+			<ul>
+				<li><a href="../index.html">Accueil</a></li>
+				<li><a href="produits.html">Produits</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<hr>
+
+		<div id="bloc">
+			<h2>Demande de catalogue</h2>
+			<p>Demandez-nous vite notre catalogue gratuit !<br>
+			Il vous sera livré dans les meilleurs délais.</p>
+
+			<form method="POST" action="mailto:hockeur.ice92@gmail.com?subject=demande-de-catalogue" enctype="text/plain">
+				<label for="civilite">Civilité</label>
+				<select name="civilite" value="1">
+					<option value="madame">Madame</option>
+					<option value="monsieur">Monsieur</option>
+					<option value="autre">Autre</option>
+				</select><br><br>
+				<label for="nom">Nom</label>
+				<input type="text" name="nom" id="nom" size="20" maxlength="20" required="required"><br><br>
+				<label for="prenom">Prénom</label>
+				<input type="text" name="prenom" id="prenom" size="30" maxlength="20" required="required"><br><br>
+				<label for="adresse">Adresse</label>
+				<textarea name="adresse" id="adresse" required="required"></textarea><br><br>
+				<label for="ville">Ville</label>
+				<input type="text" name="ville" id="ville" size="30" maxlength="30" required="required">
+				<label for="code">Code postal :</label>
+				<input type="text" name="code" id="code" size="10" maxlength="10" required="required"><br>
+				<input type="checkbox" name="choix" id="choix"><label for="choix">je souhaite recevoir la newslettre</label>
+				<label for="courriel">- courriel :</label>
+				<input type="text" name="courriel" id="courriel" size="30" maxlength="30" required="required"><br><br>
+				<input type="submit"  name="Envoyer" value="Envoyer">
+			</form>
+
+			<p>Ce site a fait l'objet d'une déclaration auprès de la Commission Nationale Informatique et Libertés (CNIL). Conformément aux dispositions de la loi Informatique et Libertés du 6/01/1978, vous disposez d'un droit de modification, de rectification et d'opposition/suppression des données vous concernant, ce par simple demande à info@sfcv.com</p>
+			<p>N'hésitez pas à prendre avec l'équipe SFCV. Nous répondrons à toutes vos questions sur l'aménagement de votre cave ou le choix de votre armoire à vin. Tous les conseils de professonnels pour conserver vos meilleur vins en toutes sécurité pour le plaisir de les déguster en toute convivialité.</p>
+		</div>
+
+		<hr>
+
+		<div id="pied">
+			<p>© SFCV - <a href="mentions_legales.html">Mentions légales</a></p><!-- © = Alt + 0169-->
+			<p>L'abus d'alcool est dangereux pour la santé, à consommer avec modération</p>
+		</div>
+	</body>
+</html>
